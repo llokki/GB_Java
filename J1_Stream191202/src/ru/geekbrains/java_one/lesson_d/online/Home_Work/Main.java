@@ -11,7 +11,21 @@ public class Main {
         Employee x5 = new Employee("Agtonom Agronomov", "butcher", 4556266, 4000, 98);
 
         x1.salaryUp();
+        x2.salaryUp();
+        x3.salaryUp();
+        x4.salaryUp();
+        x5.salaryUp();
 
+        x1.old();
+        x2.old();
+        x3.old();
+        x4.old();
+        x5.old();
 
+        x1.Id();
+        x2.Id();
+        x3.Id();
+        x4.Id();
+        x5.Id();
     }
 }

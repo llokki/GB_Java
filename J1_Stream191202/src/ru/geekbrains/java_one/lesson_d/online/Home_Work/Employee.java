@@ -6,6 +6,7 @@ public class Employee {
     private int number;
     private int salary;
     private int age;
+    private int id;
 
     public Employee(String name, String position, int number, int salary, int age) {
         this.age = age;
@@ -31,17 +32,29 @@ public class Employee {
         return salary;
     }
 
-    public int getAge() {
-        return age;
+    public int getAge() { return age; }
+
+    private void getId(){
+        this.id = id;
     }
 
 
-    public void salaryUp() {
-        for (int i = 0; i < 5; i++) {
-            if (getAge() > 40) {
-                System.out.println(name + " , " + position);
-            }
-        }
 
+
+
+
+    public void salaryUp() {
+        if (getAge() > 45) {
+            salary = salary + 5000;
+        }
+    }
+    public void old() {
+            if (getAge() > 40) {
+                System.out.println(name + " , " + position + " , " + number + " , " + salary + " , " + age);
+            }
+    }
+
+    public void Id() {
+        System.out.println(name + " - порядковый номер: " + id);
     }
 }
