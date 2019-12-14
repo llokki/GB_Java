@@ -10,7 +10,8 @@ public class Main {
         Employee x4 = new Employee("Ceritelli Givi Zurabovich", "writer", 3451255, 122, 57);
         Employee x5 = new Employee("Agtonom Agronomov", "butcher", 4556266, 4000, 98);
 
-        Employee.salaryUp();
+        x1.salaryUp();
+
 
     }
 }
