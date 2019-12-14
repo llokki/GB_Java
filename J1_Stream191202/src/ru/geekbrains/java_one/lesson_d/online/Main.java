@@ -7,13 +7,14 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[5];
+        int [] arr = new int[5];
 
         Cat c0 = new Cat("Barsik", "Black");
-        Cat c1 = new Cat("Murzik", "White", 1);
+        Cat c1 = new Cat("Murzik" , "Red", 1);
         Dog d0 = new Dog();
         d0.color = c0.getColor() + " and blue";
         System.out.println(d0.color);
+
 //        Cat c2 = c0;
 //        c2.age = 5;
 //
@@ -25,4 +26,4 @@ public class Main {
         c1.jump();
     }
 }
-}
+
