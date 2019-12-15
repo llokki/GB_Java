@@ -16,45 +16,33 @@ public class Employee {
         this.salary = salary;
     }
 
+    public int getId () {return id++ ;}
+    private void setId(int id) {this.id = 1;}
+
     public String getName() {
         return name;
     }
-
     public String getPosition() {
         return position;
     }
-
     public int getNumber() {
         return number;
     }
-
     public int getSalary() {
         return salary;
     }
-
     public int getAge() { return age; }
-
-    private void getId(){
-        this.id = id;
-    }
-
-
-
-
-
 
     public void salaryUp() {
         if (getAge() > 45) {
             salary = salary + 5000;
         }
     }
-    public void old() {
-            if (getAge() > 40) {
-                System.out.println(name + " , " + position + " , " + number + " , " + salary + " , " + age);
-            }
-    }
 
-    public void Id() {
-        System.out.println(name + " - порядковый номер: " + id);
+    public void old() {
+        if (getAge() > 40) {
+            System.out.println(name + " , " + position + " , " + number + " , " + salary + " , " + age + " , " + id);
+        }
     }
 }
+
