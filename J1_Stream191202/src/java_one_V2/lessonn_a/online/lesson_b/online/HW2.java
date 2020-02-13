@@ -71,6 +71,59 @@ public class HW2 {
 //            System.out.println();
 //        }
 //    }
+//    private static boolean example6 (int [] arr){
+//        int right = 0, left = 0;
+//        for (int i = 0; i < arr.length; i++){
+//            left += arr[i];
+//            for (int j = i+1; j < arr.length; j++){
+//                right += arr[j];
+//            }
+//            if (left == right) return true;
+//            right = 0;
+//        }
+//        return false;
+private static void shifter(int[] array, int value) {
+    boolean direction;
+    if (value < 0) {
+        direction = true;
+        value = -value;
+    } else {
+        direction = false;
+    }
+    value %= array.length;
+    int lastIndex = array.length - 1;
+    for (int i = 0; i < value; i++) {
+        int temp = (direction) ? array[0] : array[lastIndex];
+        for (int j = 0; j < lastIndex; j++) {
+            if (direction)
+                array[j] = array[j + 1];
+            else
+                array[lastIndex - j] = array[lastIndex - j - 1];
+        }
+        if (direction)
+            array[lastIndex] = temp;
+        else
+            array[0] = temp;
+    }
+}
+
+    private static void shifter2(int[] array, int value) {
+        boolean direction = value < 0;
+        if (direction) value = -value;
+
+        value %= array.length;
+        int lastIndex = array.length - 1;
+        for (int i = 0; i < value; i++) {
+            int temp = (direction) ? array[0] : array[lastIndex];
+            if (direction) {
+                System.arraycopy(array, 1, array, 0, lastIndex);
+                array[lastIndex] = temp;
+            } else {
+                System.arraycopy(array, 0, array, 1, lastIndex);
+                array[0] = temp;
+            }
+        }
+    }
     public static void main (String[] args) {
 //        int [] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
 //        example1(arr);
