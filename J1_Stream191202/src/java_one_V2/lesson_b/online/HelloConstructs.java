@@ -1,4 +1,4 @@
-package java_one_V2.lessonn_a.online.lesson_b.online;
+package java_one_V2.lesson_b.online;
 import java.util.Arrays;
 
 public class HelloConstructs {
