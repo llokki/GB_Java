@@ -1,4 +1,4 @@
-package java_one_V2.lessonn_a.online;
+package java_one_V2.lesson_a.online;
 
 public class HelloWorld {
 
