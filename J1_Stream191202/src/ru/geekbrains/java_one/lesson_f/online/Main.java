@@ -28,8 +28,6 @@ public class Main {
             ps.println("Hello World!");
             fos.close();
 
-
-
             FileInputStream fis = new FileInputStream("test.txt");
             Scanner sc = new Scanner(fis);
             while (sc.hasNext()) {
