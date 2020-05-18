@@ -1,4 +1,7 @@
 package ru.geekbrains.java_two.lesson1.marathon.competitors;
 
-public class Cat {
+public class Cat extends Animal {
+    public Cat(String name) {
+        super("Кот", name, 200, 0, 5);
+    }
 }
