@@ -26,7 +26,7 @@ public class Human implements Runnable,Jumpable, Competitor {
         if (height <= maxJumpHeight) {
             System.out.println(name + " прыгает на " + height + " метров" );
         } else {
-            System.out.println(name + " не способен перепрыгнуть " + height + " метров" );
+            System.out.println(name + " не может перепрыгнуть " + height + " метров" );
             onDistance = false;
         }
     }
