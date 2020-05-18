@@ -1,4 +1,6 @@
 package ru.geekbrains.java_two.lesson1;
 
-public class Jumpable {
+@FunctionalInterface
+public interface Jumpable {
+    void jump();
 }
