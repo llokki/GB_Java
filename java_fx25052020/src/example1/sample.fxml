@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:controller="example1.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="Open"/>
+                <MenuItem text="Save"/>
+                <MenuItem text="Close"/>
+                <MenuItem text="Exit" onAction="#menuExitClick"/>
+            </Menu>
+
+        </MenuBar>
+    </top>
+    <center>
+        <Slider fx:id="slider" min="0" max="100" showTickMarks="true" showTickLabels="true"
+        onMouseReleased="#sliderOnMouseReleased"/>
+    </center>
+    <bottom>
+        <HBox>
+            <Button text="btn1"/>
+            <Button text="btn2"/>
+            <Label fx:id="label" text="Value: "/>
+
+        </HBox>
+    </bottom>
+</BorderPane>
