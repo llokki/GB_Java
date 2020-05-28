@@ -1,0 +1,23 @@
+.button{
+-fx-background-color: yellow;
+-fx-border-color: black;
+-fx-round: 20;
+-fx-border-radius: 5;
+-fx-font-size: 28;
+-fx-font-weight: bolder;
+-fx-pref-height: 50;
+-fx-pref-width: 50;
+}
+
+
+
+.button: hover {
+-fx-background-color: gold;
+}
+
+.button: pressed {
+-fx-background-color: #7cfc00;
+}
+
+
+

@@ -1,0 +1,15 @@
+.button{
+    -fx-background-color: yellow;
+}
+
+.button: hover {
+ -fx-background=color: #ff8e09;
+ }
+
+ #btnAdd{
+  -fx-background-color: #92ff1a;
+ }
+
+ #btnAdd: hover {
+  -fx-background-color: #19d00;
+ }
