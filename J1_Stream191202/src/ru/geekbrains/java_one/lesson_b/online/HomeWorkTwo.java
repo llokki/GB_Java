@@ -43,6 +43,13 @@ public class HomeWorkTwo {
          return min;
      }
 
+     private static void crucifix(int[][] ex5){
+        for (int i = 0; i < ex5.length; i++){
+            ex5[i][i] = 1 ;
+            ex5[i][ex5.length - 1 - i] = 1;
+        }
+     }
+
     public static void main(String[] args) {
         int [] ex1 = {1,1,1,0,0,0,};
 
@@ -63,6 +70,12 @@ public class HomeWorkTwo {
         System.out.println("Minimum: " + searchMax(ex4));
         System.out.println("Maximum: " + searchMin(ex4));
 
+        int [][] ex5 = new int[5][5];
+        crucifix(ex5);
+        for (int i = 0; i < ex5.length; i++){
+            System.out.println(Arrays.toString(ex5[i]));
+
+        }
     }
 }
 
