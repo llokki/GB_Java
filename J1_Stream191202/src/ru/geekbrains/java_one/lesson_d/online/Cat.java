@@ -19,7 +19,7 @@ public class Cat {
     }
 
     public int getAge() {
-        return 20191 - birthYear;
+        return 2019 - birthYear;
     }
 
     private void setAge(int age) {
@@ -49,7 +49,7 @@ public class Cat {
     }
 
     public void jump() {
-        if(getAge( ) < 5){
+        if(getAge() < 5){
             System.out.println(name + " jump");
         }
     }
